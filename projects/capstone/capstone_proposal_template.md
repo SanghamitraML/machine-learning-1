@@ -9,7 +9,7 @@ February 14th, 2021
 ### Domain Background
 
 
-Credit risk is the possibility of a loss resulting from a borrower's failure to repay a loan or meet contractual obligations. Traditionally, it refers to the risk that a lender may not receive the owed principal and interest. Although it's impossible to know exactly who will default on obligations, properly assessing and managing credit risk can lessen the severity of a loss. Interest payments from the borrower or issuer of a debt obligation are a lender's or investor's reward for assuming credit risk. In recent times, the US subprime crisis is an example of huge financial crisis. In essence the core reson for the financial crisis was a broader trend of lowered lending standards and higher-risk mortgage products. Insufficient understand of credit risk can become a problem of huge proportions. Ont he other hand too much tightening of lending will exclude people from lower income groups from organized banking. The solution is to find a balanced solution which will enable more and more people to access credit while providing a complete understanding of the risk involved.
+Credit risk is the possibility of a loss resulting from a borrower's failure to repay a loan or meet contractual obligations. Traditionally, it refers to the risk that a lender may not receive the owed principal and interest. Although it's impossible to know exactly who will default on obligations, properly assessing and managing credit risk can lessen the severity of a loss. Interest payments from the borrower or issuer of a debt obligation are a lender's or investor's reward for assuming credit risk. In recent times, the US subprime crisis is an example of huge financial crisis resulting from bad credit. In essence the core reason for the financial crisis was a broader trend of lowered lending standards and higher-risk mortgage products. Insufficient understanding of credit risk can become a problem of huge proportions. On the other hand too much tightening of lending will exclude people from lower income groups from organized banking. The solution is to find a balanced solution which will enable more and more people to access credit while providing a complete understanding of the risk involved.
 
 Home credit focusses on providing small loans to people with little or no credit history.
 
@@ -30,8 +30,8 @@ This is a featured competition is Kaggle and I will be using the data set from K
 ### Problem Statement
 
 In this capstone project, I will build a model that will predict the probability of an applicant to repay their loan. 
-The applicant population being considered for this project are people with little or no credit history. Due to this the risk of lending to this segment is traditionally considered very high. They often get exclused from formal banking. However with the advances in Data analysis and machine learning, we have the opportunity to go beyond traditional risk analysis and use data other than credit history to understand better the ability of an applicant to repay the loan.
-A good ML model with help provide credit to this underserved segment as well as lower the crdit risk for the lending organization in this case Home Credit.
+The applicant population being considered for this project are people with little or no credit history. Due to this, the risk of lending to this segment is traditionally considered very high. They often get excluded from formal banking. However with the advances in Data analysis and machine learning, we have the opportunity to go beyond traditional risk analysis methods and use data other than credit history to understand better the ability of an applicant to repay the loan.
+A good ML model will help provide credit to this underserved segment as well as lower the crdit risk for the lending organization in this case, Home Credit.
 Considering the consequences of nonrepayment of loans, it is important for the model to minimize false positives.
 
 
@@ -55,8 +55,7 @@ The dataset contains broadly the application data and loan payback related infor
 ### Solution Statement
 
 This is a classification problem. The aim is to classify an applicant as defaulter or non-defaulter.I will divide my solution into the following parts:
-1. Data Analysis
-I will begin by analysing the data and understanding the shape of the underlying data, identify missing data, sparse dimensions etc.
+1. Data Analysis - I will begin by analysing the data and understanding the shape of the underlying data, identify missing data, sparse dimensions etc.
 2. Feature engineering and dimentionality reduction - Feature engineering will be a very important part of this solution. This is also evident from an understanding of the solutions presented
 3. Model development - The last step will be choosing the best fit model
 4. Model evaluation and accuracy
@@ -65,12 +64,12 @@ I will begin by analysing the data and understanding the shape of the underlying
 I am proposing to use the scores of the contestants of the Kaggle competition as the benchmark result. There is no openly available benchmark model to compare against.
 
 ### Evaluation Metrics
-On preliminany analysis,  the data available appears to be an Imbalanced Dataset, hence we cannot simply use Accuracy as a metric for evaluating the performance of the model. There are some metrics that work well with imbalanced datasets, of which we will use the below-mentioned metrics - 
+On preliminany analysis,  the data available appears to be an Imbalanced Dataset, hence we cannot simply use Accuracy as a metric for evaluating the performance of the model. There are some metrics that work well , of which we will use the below mentioned metrics - 
 
-1. ROC-AUC Score: This metric is insensitive to class imbalance. It works by ranking the probabilities of prediction of the positive class label and calculating the Area under the ROC Curve which is plotted between True Positive Rates and False Positive Rates for each threshold value.
-2. Recall Score: It is the ratio of the True Positives predicted by the model and the total number of Actual Positives. It is also known as True Positive Rate.
-3. Precision Score: It is the ratio of True Positives and the Total Positives predicted by the model.
-4. Confusion Matrix: The confusion matrix helps us to visualize the mistakes made by the model on each of the classes, be it positive or negative. Hence, it tells us about misclassifications for both classes.
+1. ROC-AUC Score -  This metric is insensitive to class imbalance. It works by ranking the probabilities of prediction of the positive class label and calculating the Area under the ROC Curve which is plotted between True Positive Rates and False Positive Rates for each threshold value.
+2. Recall Score - It is the ratio of the True Positives predicted by the model and the total number of Actual Positives. It is also known as True Positive Rate.
+3. Precision Score - It is the ratio of True Positives and the Total Positives predicted by the model.
+4. Confusion Matrix - The confusion matrix helps us to visualize the mistakes made by the model on each of the classes, be it positive or negative. Hence, it tells us about misclassifications for both classes.
 
 ### Project Design
 
