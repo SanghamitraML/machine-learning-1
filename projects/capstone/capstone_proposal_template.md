@@ -8,13 +8,14 @@ February 14th, 2021
 
 ### Domain Background
 
-In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required.
 
 Credit risk is the possibility of a loss resulting from a borrower's failure to repay a loan or meet contractual obligations. Traditionally, it refers to the risk that a lender may not receive the owed principal and interest. Although it's impossible to know exactly who will default on obligations, properly assessing and managing credit risk can lessen the severity of a loss. Interest payments from the borrower or issuer of a debt obligation are a lender's or investor's reward for assuming credit risk. In recent times, the US subprime crisis is an example of huge financial crisis. In essence the core reson for the financial crisis was a broader trend of lowered lending standards and higher-risk mortgage products. Insufficient understand of credit risk can become a problem of huge proportions. Ont he other hand too much tightening of lending will exclude people from lower income groups from organized banking. The solution is to find a balanced solution which will enable more and more people to access credit while providing a complete understanding of the risk involved.
 
 Home credit focusses on providing small loans to people with little or no credit history.
 
-Research Papers https://www.centerforfinancialinclusion.org/new-credit-risk-models-for-the-unbanked
+Research Papers 
+
+https://www.centerforfinancialinclusion.org/new-credit-risk-models-for-the-unbanked
 
 https://development.asia/explainer/heres-how-alternative-credit-scoring-can-improve-poors-access-loans
 
