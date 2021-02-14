@@ -47,29 +47,50 @@ There are 7 different sources of data:
 6. credit_card_balance:The monthly data about previous credit cards clients have had with Home Credit. Each row is one month of a credit card balance, and a single credit card can have many rows.
 7. installments_payment:The data of payment history for previous loans at Home Credit. There is one row for every made payment and one row for every missed payment.
 
-### Solution Statement
-_(approx. 1 paragraph)_
+The dataset contains broadly the application data and loan payback related information.
 
-In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once).
+** Taken from Kaggle post on the competition
+
+### Solution Statement
+
+This is a classification problem. The aim is to classify an applicant as defaulter or non-defaulter.I will divide my solution into the following parts:
+1. Data Analysis
+I will begin by analysing the data and understanding the shape of the underlying data, identify missing data, sparse dimensions etc.
+2. Feature engineering and dimentionality reduction - Feature engineering will be a very important part of this solution. This is also evident from an understanding of the solutions presented
+3. Model development - The last step will be choosing the best fit model
+4. Model evaluation and accuracy
 
 ### Benchmark Model
 I am proposing to use the scores of the contestants of the Kaggle competition as the benchmark result. There is no openly available benchmark model to compare against.
 
 ### Evaluation Metrics
-Since the data available to us is an Imbalanced Dataset, we cannot simply use Accuracy as a metric for evaluating the performance of the model. There are some metrics that work well with imbalanced datasets, of which we will use the below-mentioned metrics.
-ROC-AUC Score: This metric is insensitive to class imbalance. It works by ranking the probabilities of prediction of the positive class label and calculating the Area under the ROC Curve which is plotted between True Positive Rates and False Positive Rates for each threshold value.
-Recall Score: It is the ratio of the True Positives predicted by the model and the total number of Actual Positives. It is also known as True Positive Rate.
-Precision Score: It is the ratio of True Positives and the Total Positives predicted by the model.
-Image for post
-Recall and Precision Score Formulae
-Confusion Matrix: The confusion matrix helps us to visualize the mistakes made by the model on each of the classes, be it positive or negative. Hence, it tells us about misclassifications for both classes.
+On preliminany analysis,  the data available appears to be an Imbalanced Dataset, hence we cannot simply use Accuracy as a metric for evaluating the performance of the model. There are some metrics that work well with imbalanced datasets, of which we will use the below-mentioned metrics - 
+
+1. ROC-AUC Score: This metric is insensitive to class imbalance. It works by ranking the probabilities of prediction of the positive class label and calculating the Area under the ROC Curve which is plotted between True Positive Rates and False Positive Rates for each threshold value.
+2. Recall Score: It is the ratio of the True Positives predicted by the model and the total number of Actual Positives. It is also known as True Positive Rate.
+3. Precision Score: It is the ratio of True Positives and the Total Positives predicted by the model.
+4. Confusion Matrix: The confusion matrix helps us to visualize the mistakes made by the model on each of the classes, be it positive or negative. Hence, it tells us about misclassifications for both classes.
 
 ### Project Design
-_(approx. 1 page)_
 
-In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project.
+The first step in project design is Data Preparation.
 
------------
+Data Analysis and Cleaning - I will ascertain the quality of the 7 data sets provided. Various techniques can be applied to improve data quality like filling up missing values or in extreme cases dropping observations with bad data altogether.
+
+Feature Engineering - The next step is Feature Engineering, where I will come up with new ways and features to transform our data. There were around 220 raw features in our dataset. The goal here is to find out if we can reduce dimentionality and determine the features which significantly impact the target variable.
+
+Machine Learning Model 
+
+I would like to evaluate the following models for this problem:
+
+1. Randon Forest
+2. XGBoost Classifier
+3. Light GBM
+4. Logistic Regression
+
+Basis the performance the best model will be selected. 
+
+
 
 **Before submitting your proposal, ask yourself. . .**
 
